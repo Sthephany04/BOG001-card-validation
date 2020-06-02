@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Tu Tienda Virtual</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato&family=Wendy+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -11,6 +12,7 @@
       <img class="logo" src="../src/imagenes/Logo.svg">
     </header>
     <main>
+<!-- html pantalla1 -->      
       <section class="pantalla1">
         <div class="producto">
           <h3>Producto</h3>
@@ -23,35 +25,49 @@
           <p>Contenido de la caja, Mouse óptico inalámbrico WM126 de Dell, 1 batería AA, Receptor USB, Documentación</p>
         </div>
         <div class="precio">
+          <i class="far fa-star"></i>
           <p>Precio: $63.000</p>
           <p>Disponible en Stock</p>
         </div>
         <div class="btnPago">
+          <i class="far fa-credit-card"></i>
           <p>Pago hasta 12 cuotas</p>
           <button>Pago con tarjeta de credito</button>
         </div>
       </section>
-      <section>
+<!-- html pantalla2 --> 
+      <section class="pantalla2">
         <h3 class="titulo">Datos de Pagos </h3>
-        <div>
-          <p>ingrese el número de la tarjeta</p>
-          <input class="imput numero" type="numero">
-          <p>ingresa tu nombre</p>
-          <input class="imput nombre" type ="nombre del cliente">
-
+        <div class="inputNumero">
+          <i class="far fa-credit-card"></i>
+          <label for="entradaNumero">Ingresa el número de la tarjeta</label>
+          <input type="text" id="entradaNumero" maxlength="19">
+        </div>
+        <div class="inputNombre">
+          <i class="far fa-user"></i>
+          <label for="entradaNombre">Ingresa tu nombre</label>
+          <input type="text" id="entradaNombre" maxlength="19">
+        </div>
+        <div class="grupoValidar">
+          <div class="tarjeta" id="tarjeta">
+            <p>Tarjeta de credito</p>
+            <div class="datos">
+              <div class="grupoNumero" id="numero">
+                <p class="label">NUMERO DE TARJETA</p>
+                <p class="numero">#### #### #### ####</p>
+              </div>
+              <div class="grupoNombre" id="nombre">
+                <p class="label">NOMBRE</p>
+                <p class="nombre">Maria Gonzalez</p>
+              </div>
+            </div>
+          </div>
+          <button class="btnValidar">VALIDAR</button>
         </div>
         <div>
-          <p>tu tarjeta es valida para comprar</p>
-
+          <p>Tu tarjeta es valida para comprar</p>
+          <button class="btnComprar">COMPRAR</button>
         </div>
-        <div>
-        <button>validar</button>
-      </div>
-      <div>
-        <button>comprar</button>
-      </div>
-        
-
       </section>
     </main>
     <footer class="footer">
@@ -59,5 +75,6 @@
         TODOS LOS DERECHOS RESERVADOS A VIRTUAL TECH DISTRIBUCIONES S.A.S</p>
     </footer>
     <script src="index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/826275d0c9.js" crossorigin="anonymous"></script>
   </body>
 </html>
