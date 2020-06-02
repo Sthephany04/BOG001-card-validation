@@ -1,0 +1,40 @@
+.banner{
+    height: 121;
+    background-color: #258EC9;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.logo{
+    padding-left: 10%;
+}
+
+.tituloPrincipal{
+    color:white;
+    font-family: fantasy;
+    padding-left: 5%;
+}
+.mouse{
+    height: 253px;
+}
+.producto{
+    padding-left: 30%;
+    
+}
+.subtitulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.descrip{
+    background-color: #C4C4C4;
+    width: 500px;
+}
+.centro{
+    text-align:center
+}
