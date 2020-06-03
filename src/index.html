@@ -47,20 +47,20 @@
       </section>
 <!-- html pantalla2 --> 
       <section class="pantalla2">
-        <h3 class="titulo">Datos de Pagos </h3>
+        <h3 class="titulo">Datos de Pagos</h3>
         <div class="inputNumero">
           <i class="far fa-credit-card"></i>
           <label for="entradaNumero">Ingresa el número de la tarjeta</label>
-          <input type="text" id="entradaNumero" maxlength="19">
+          <input type="text" class="inputNumber" id="entradaNumero" maxlength="19">
         </div>
         <div class="inputNombre">
           <i class="far fa-user"></i>
           <label for="entradaNombre">Ingresa tu nombre</label>
-          <input type="text" id="entradaNombre" maxlength="19">
+          <input type="text" class="inputName" id="entradaNombre" maxlength="19">
         </div>
         <div class="grupoValidar">
           <div class="tarjeta" id="tarjeta">
-            <p>Tarjeta de credito</p>
+            <p class="title">Tarjeta de credito</p>
             <div class="datos">
               <div class="grupoNumero" id="numero">
                 <p class="label">NUMERO DE TARJETA</p>
@@ -74,9 +74,9 @@
           </div>
           <button class="btnValidar">VALIDAR</button>
         </div>
-        <div>
-          <p>Tu tarjeta es valida para comprar</p>
-          <button class="btnComprar">COMPRAR</button>
+        <div class="validacion">
+          <p id="mensaje">Tarjeta no Valida</p>
+          <button class="btnComprar" id="mensajeBoton">Comprar</button>
         </div>
       </section>
     </main>
