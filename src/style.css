@@ -51,12 +51,13 @@
     color:blue; 
     align-items: center;
 }
-#pago{
-    margin-left: 5%;
-    align-items: center;
+.pagar{
+    /* padding-left: 30%; */
+    margin-left: 10PX;
 }
 .tarjetadecredito{
     height: 50px;
+    border-radius:10px ;
 }
 .boton{
     margin-left: 10%;
