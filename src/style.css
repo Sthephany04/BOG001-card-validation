@@ -1,13 +1,18 @@
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: 'Lato', sans-serif;
+}
+
 .hiden {
     display: none;
 }
 
 .banner{
-    height: 121px;
+    height: 100px;
     background-color: #258EC9;
     display: flex;
     flex-direction: row;
-  
 }
 
 .logo{
@@ -15,9 +20,11 @@
 }
 
 .tituloPrincipal{
+    margin-top: 35px;
     color:white;
     font-family: 'Wendy One', sans-serif;
     padding-left: 5%;
+    widows: 300px; ;
 }
 
 .mouse{
@@ -25,38 +32,56 @@
 }
 
 .producto{
-    padding-left: 15%;  
+    padding: 0% 20%;
+}
+.producto h3{
+    font-family: 'Wendy One', sans-serif;
 }
 
 .subtitulo{
     font-size: 20px;
     font-weight: bold;
 }
+#caracteristica{
+    color:#258EC9;
+    margin-left: 10%;
+}
 .descripcion{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0% 20%;
 }
 .descrip{
     background-color: #C4C4C4;
-    width: 500px;
+    width: 400px;
+    
+}
+.descrip h3{
+    padding-left: 5%;
 }
 .centro{
-    text-align:center
+    text-align: center;
+    margin: 3px;
+    
 }
-
 .stock{
-    font-weight: bold
+    font-weight: bold;
+    padding-left: 45px;
+    margin-top: 0px;
+    font-size: 14px;
 }
 .precio{
-    padding-left: 30%;
+    padding: 0% 20%;
 }
+
 .btnPago{
-    padding-left: 30%;
+    padding:0% 20%;
     display: flex;
     flex-direction: row;
-    color:blue; 
+    color:black; 
     align-items: center;
+    justify-content: flex-end;
 }
 .pagar{
     /* padding-left: 30%; */
@@ -67,17 +92,16 @@
     border-radius:10px ;
 }
 .boton{
-    width: 180px;
+    margin-left: 25px;
+     width: 180px;
     height: 50px;
-    margin-right: 100px;
-    background-color: #258EC9;
-    border: none;
+    background-color: #0f4ba6;
     border-radius: 10px;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: bold;
-  	letter-spacing: 2px;
+  	letter-spacing: 1px;
 	outline: none;
 }
 .estrella{
