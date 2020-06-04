@@ -3,10 +3,11 @@ import validator from './validator.js';
 console.log(validator);
 
 const numeroTarjeta = document.getElementById ('entradaNumero');
-var arregloNumero = []
+
+let inputNumero;
 
 numeroTarjeta.addEventListener ('keyup', (e) => {
-  var inputNumero = e.target.value;  
+  inputNumero = e.target.value;  
 
   numeroTarjeta.value = inputNumero
 

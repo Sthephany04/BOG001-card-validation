@@ -3,7 +3,7 @@
 }
 
 .banner{
-    height: 121;
+    height: 121px;
     background-color: #258EC9;
     display: flex;
     flex-direction: row;
@@ -23,10 +23,11 @@
 .mouse{
     height: 253px;
 }
+
 .producto{
-    padding-left: 30%;
-    
+    padding-left: 15%;  
 }
+
 .subtitulo{
     font-size: 20px;
     font-weight: bold;
@@ -66,9 +67,18 @@
     border-radius:10px ;
 }
 .boton{
-    margin-left: 10%;
-    color:white;
-    background-color: blue;
+    width: 180px;
+    height: 50px;
+    margin-right: 100px;
+    background-color: #258EC9;
+    border: none;
+    border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+  	letter-spacing: 2px;
+	outline: none;
 }
 .estrella{
     display: flex;
@@ -83,19 +93,20 @@
 }
 
 .titulo {
-    padding-left: 15%;
+    padding: 0% 20%;
     margin: 20px 0px;
+    font-family: 'Wendy One', sans-serif;
 }
 
 .inputNumero {
-    padding-left: 18%;
+    padding: 0% 20%;
     margin: 30px 0px;    
 }
 
 .inputNumber {
     height: 35px;
     width: 350px;
-    margin-left: 10%;
+    margin-left: 25%;
     border-radius: 8px;
     border: 1px solid #000;
     box-shadow: 1px 2px #000;
@@ -103,12 +114,12 @@
 }
 
 .inputNombre {
-    padding-left: 18%;
+    padding: 0% 20%;
     margin: 25px 0px;
 }
 
 .inputName {
-    margin-left: 17%;
+    margin-left: 36%;
     height: 35px;
     width: 350px;
     border-radius: 8px;
@@ -118,7 +129,7 @@
 }
 
 .grupoValidar {
-    padding: 0% 18%;
+    padding: 0% 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,4 +208,17 @@
 	font-weight: bold;
   	letter-spacing: 1px;
 	outline: none;
+}
+
+.footer {
+    background: #2E4E7D;
+    height: 100px;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0px 500px;
+    text-align: center;
+    padding: 26px;
+    font-size: 12px;
 }
