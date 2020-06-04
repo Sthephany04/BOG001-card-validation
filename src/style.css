@@ -26,6 +26,10 @@
     font-size: 20px;
     font-weight: bold;
 }
+#caracteristica{
+    color: blue;
+    margin-left: 10%;
+}
 .descripcion{
     display: flex;
     flex-direction: row;
@@ -62,7 +66,7 @@
 .boton{
     margin-left: 10%;
     color:white;
-    background-color: blue;
+    background-color: #0F4BA6;
 }
 .estrella{
     display: flex;
