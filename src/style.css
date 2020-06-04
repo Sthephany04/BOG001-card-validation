@@ -16,9 +16,10 @@
 
 .tituloPrincipal{
     color:white;
-    font-family: fantasy;
+    font-family: 'Wendy One', sans-serif;
     padding-left: 5%;
 }
+
 .mouse{
     height: 253px;
 }
@@ -43,6 +44,43 @@
     text-align:center
 }
 
+.stock{
+    font-weight: bold
+}
+.precio{
+    padding-left: 30%;
+}
+.btnPago{
+    padding-left: 30%;
+    display: flex;
+    flex-direction: row;
+    color:blue; 
+    align-items: center;
+}
+.pagar{
+    /* padding-left: 30%; */
+    margin-left: 10PX;
+}
+.tarjetadecredito{
+    height: 50px;
+    border-radius:10px ;
+}
+.boton{
+    margin-left: 10%;
+    color:white;
+    background-color: blue;
+}
+.estrella{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+#estrella{
+     color: rgb(247, 232, 25);
+    border-width: 2px;
+    padding-right: 10px;
+    font-size:30px ;
+}
 
 .titulo {
     padding-left: 15%;

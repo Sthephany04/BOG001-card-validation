@@ -4,26 +4,27 @@
     <meta charset="utf-8">
     <title>Tu Tienda Virtual</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato&family=Wendy+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="banner">
       <img class="logo" src="../src/imagenes/Logo.svg">
-      <h1 class="tituloPrincipal">Tu Tienda Virtual</h1>
-      
+      <h1 class="tituloPrincipal">Tu Tienda Virtual</h1>      
     </header>
     <main>
+
 <!-- html pantalla1 -->      
       <section class="pantalla1">
         <div class="producto">
           <h3 class="subtitulo">Producto</h3>
-          <p>Mouse inalambrico marca DELL</p>
+          <p>Mouse inalámbrico marca DELL</p>
         </div>
         <div class="descripcion">
           <img  class="mouse" src="../src/imagenes/mouse.jpeg">
         
         <div class="descrip">
-          <h3>Descripcion</h3>
+          <h3>Descripción</h3>
           <p class="centro">Configuración rápida y fácil instalación</p>
           <p class="centro">Contenido de la caja</p>
           <p class="centro"> Mouse óptico inalámbrico WM126 </p>
@@ -35,14 +36,16 @@
         </div>
         </div>
         <div class="precio">
-          <i class="far fa-star"></i>
-          <p>Precio: $63.000</p>
-          <p>Disponible en Stock</p>
+          <div class="estrella">
+            <i id="estrella" class="fa fa-star"></i>
+            <p>Precio: $63.000</p>
+          </div>
+          <p class="stock">Disponible en Stock</p>
         </div>
         <div class="btnPago">
-          <i class="far fa-credit-card"></i>
-          <p>Pago hasta 12 cuotas</p>
-          <button>Pago con tarjeta de credito</button>
+          <img class="tarjetadecredito" src="../src/imagenes/tarjetas de credito.jpg"/>
+          <p class="pagar">Pago hasta 12 cuotas</p>
+          <button class="boton">Pago con tarjeta de crédito</button>
         </div>
       </section>
 <!-- html pantalla2 --> 
@@ -58,6 +61,7 @@
           <label for="entradaNombre">Ingresa tu nombre</label>
           <input type="text" class="inputName" id="entradaNombre" maxlength="19">
         </div>
+<!--Contenedor tarjeta-->
         <div class="grupoValidar">
           <div class="tarjeta" id="tarjeta">
             <p class="title">Tarjeta de credito</p>
@@ -74,12 +78,14 @@
           </div>
           <button class="btnValidar">VALIDAR</button>
         </div>
+<!--Validacion de Tarjeta-->
         <div class="validacion">
           <p id="mensaje">Tarjeta no Valida</p>
           <button class="btnComprar" id="mensajeBoton">Comprar</button>
         </div>
       </section>
     </main>
+<!--footer-->
     <footer class="footer">
       <p>COPYRIGHT 2020 
         TODOS LOS DERECHOS RESERVADOS A VIRTUAL TECH DISTRIBUCIONES S.A.S</p>

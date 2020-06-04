@@ -2,7 +2,25 @@ import validator from './validator.js';
 
 console.log(validator);
 
-let numeroTarjeta = 5432123458994566;
-Array.from(5432123458994566);
+const numeroTarjeta = document.getElementById ('entradaNumero');
+var arregloNumero = []
 
-console.log(Array.from);
+numeroTarjeta.addEventListener ('keyup', (e) => {
+  var inputNumero = e.target.value;  
+
+  numeroTarjeta.value = inputNumero
+
+  .replace(/\s/g, '')  // elimina los espacios
+  .replace(/\D/g, '')  // elimina las letras
+  .replace(/([0-9]{4})/g, '$1 ');  //agrupa los numero de a 4
+
+  console.log(numeroTarjeta.value)
+ }
+)
+  
+ /* arregloNumero.forEach(function(element,index,arreglo){
+    let number = parseInt(element);
+    console.log(number);    
+  })  */
+
+
