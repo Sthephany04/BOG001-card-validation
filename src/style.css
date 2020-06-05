@@ -135,6 +135,7 @@ body {
     border: 1px solid #000;
     box-shadow: 1px 2px #000;
     outline: none;
+    text-align: center;
 }
 
 .inputNombre {
@@ -150,6 +151,7 @@ body {
     border: 1px solid #000;
     box-shadow: 1px 2px #000;
     outline: none;
+    text-align: center;
 }
 
 .grupoValidar {
@@ -245,4 +247,8 @@ body {
     text-align: center;
     padding: 26px;
     font-size: 12px;
+    margin-top: 20px;
+}
+.pantalla2 {
+    display: none;
 }
