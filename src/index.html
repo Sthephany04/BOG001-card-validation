@@ -15,7 +15,7 @@
     <main>
 
 <!-- html pantalla1 -->      
-      <section class="pantalla1">
+      <section id=pantalla1 class="pantalla1">
         <div class="producto">
           <h3 class="subtitulo">Producto</h3>
           <p>Mouse inalámbrico marca DELL</p>
@@ -45,34 +45,34 @@
         <div class="btnPago">
           <img class="tarjetadecredito" src="../src/imagenes/tarjetas de credito.jpg"/>
           <p class="pagar">Pago hasta 12 cuotas</p>
-          <button class="boton">Pago con tarjeta de crédito</button>
+          <button onclick="pulsarboton()" class="boton">Pago con tarjeta de crédito</button>
         </div>
       </section>
 <!-- html pantalla2 --> 
-      <section class="pantalla2">
+      <section id="pantalla2" class="pantalla2">
         <h3 class="titulo">Datos de Pagos</h3>
         <div class="inputNumero">
           <i class="far fa-credit-card"></i>
           <label for="entradaNumero">Ingresa el número de la tarjeta</label>
-          <input type="text" class="inputNumber" id="entradaNumero" maxlength="19">
+          <input type="text" class="inputNumber" id="entradaNumero" maxlength="16" oninput="enmascarador()" placeholder="#### #### #### ####">
         </div>
         <div class="inputNombre">
           <i class="far fa-user"></i>
           <label for="entradaNombre">Ingresa tu nombre</label>
-          <input type="text" class="inputName" id="entradaNombre" maxlength="19">
+          <input type="text" class="inputName" id="entradaNombre" maxlength="19" oninput="ingresarNombre()" placeholder= "----------------">
         </div>
 <!--Contenedor tarjeta-->
-        <div class="grupoValidar">
+        <div  class="grupoValidar">
           <div class="tarjeta" id="tarjeta">
             <p class="title">Tarjeta de credito</p>
             <div class="datos">
               <div class="grupoNumero" id="numero">
                 <p class="label">NUMERO DE TARJETA</p>
-                <p class="numero">#### #### #### ####</p>
+                <p id=contenedor class="label">#### #### #### ####</p>
               </div>
               <div class="grupoNombre" id="nombre">
                 <p class="label">NOMBRE</p>
-                <p class="nombre">Maria Gonzalez</p>
+                <p id=name class="label">Maria Gonzalez</p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
       <p>COPYRIGHT 2020 
         TODOS LOS DERECHOS RESERVADOS A VIRTUAL TECH DISTRIBUCIONES S.A.S</p>
     </footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/826275d0c9.js" crossorigin="anonymous"></script>
   </body>
 </html>
