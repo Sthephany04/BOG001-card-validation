@@ -1,4 +1,3 @@
-//import validator from './validator.js';
 
 //console.log(validator);
 
@@ -10,23 +9,47 @@ botonValidar.addEventListener("click", validar);
 let inputNumero;
 let arreglo = [];
 
+
 numeroTarjeta.addEventListener("keyup", recibirNumero);
 
 function recibirNumero(evento) {
   mensajeValidacion.innerHTML = "";
   inputNumero = evento.target.value;
+  let enmascarado = numeroTarjeta.value
+
+  enmascarado = enmascarar(numeroTarjeta.value)
+  
+  document.getElementById("contenedor").innerHTML = enmascarado.replace(/([*,0-9]{4})/g, "$1 ");
 
   numeroTarjeta.value = inputNumero
 
+
     .replace(/\s/g, "") // elimina los espacios
     .replace(/\D/g, "") // elimina las letras
-    .replace(/([0-9]{4})/g, "$1 "); //agrupa los numero de a 4
+    // .replace(/([0-9]{4})/g, "$1 "); //agrupa los numero de a 4
 
   console.log(inputNumero);
 
   if (inputNumero.length > 18) {
     botonValidar.style.display = "block";
   }
+}
+
+function enmascarar(Real){
+    let Mostrar = ""
+    console.log(Real)
+    for (let index = 0; index < Real.length; index++) {
+        if(index < Real.length - 4)
+        {
+            Mostrar += "*"
+        }
+        else
+        {
+            Mostrar=Mostrar + Real[index]
+        }
+    }
+    
+    return Mostrar
 }
 
 function validar() {
@@ -79,3 +102,18 @@ function luhn() {
     botonValidar.style.display = "none";
   }
 }
+
+function ingresarNombre(){
+
+    var nombre=document.getElementById("entradaNombre").value
+    document.getElementById("name").innerHTML= nombre.toUpperCase() 
+
+}
+ function pulsarboton(){
+
+    var pantalla= document.getElementById("pantalla2")
+    pantalla.style.display="block"
+
+    var pantalla1=document.getElementById("pantalla1")
+    pantalla1.style.display="none"
+ }

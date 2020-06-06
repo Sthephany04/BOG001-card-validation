@@ -164,7 +164,7 @@ body {
 }
 
 .tarjeta {
-    background: url(../src/imagenes/textura\ tarjeta.jpg);
+    background: url(./imagenes/textura\ tarjeta.jpg);
     background-size: cover;   
     border-radius: 10px; 
     width: 350px;
