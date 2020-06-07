@@ -1,36 +1,31 @@
 const validator = {
 
     isValid: function (numero) {
-        let arrayNumeros = [];
         let arreglo = [];
         let suma = 0;
 
-        for (let i = 0; i < numero.toString().length; i++) {
-            arrayNumeros.push(numero.toString()[i]);
+        for (let i = 0; i < numero.length; i++) {  //ingresar el numero a un arreglo
+            arreglo.push(parseInt(numero[i]));
         }
-        //console.log(arrayNumeros);
         
-        for (let i = 0; i < arrayNumeros.length; i++) {
-            arreglo.push(parseInt(arrayNumeros[i]));
-            //console.log(arreglo.length);
-        }
-        arreglo.reverse();
+        arreglo.reverse();     //metodo reverse, invertir el arreglo
+        //console.log(arreglo);
 
-        for (let i = 1; i < 16; i += 2) {
+        for (let i = 1; i < arreglo.length; i += 2) {   //ciclo para multiplicar cada dos posiciones * 2
             arreglo[i] = arreglo[i] * 2;
 
-                if (arreglo[i] > 9) {
+                if (arreglo[i] > 9) {        //condicional si el numero es mayor a dos cifras se suman sus digitos
                     arreglo[i] =
                     parseInt(arreglo[i].toString()[0]) + parseInt(arreglo[i].toString()[1]);
                 }
         }
 
-        for (let i = 0; i < 16; i++) {
+        for (let i = 0; i < arreglo.length; i++) {  //ciclo para sumar todos los terminos del arreglo
             suma += arreglo[i];
+            //console.log(suma);
         }
-        //console.log(suma);
 
-        if (suma % 10 == 0) {
+        if (suma % 10 == 0) {      //condicional que retona verdadero o falso de la validacion
             return true;
         } else {
             return false;
@@ -40,13 +35,14 @@ const validator = {
     maskify: function (Real) {
         let Mostrar = "";
         //console.log(Real);
-        for (let index = 0; index < Real.length; index++) {
-          if (index < Real.length - 4) {
-            Mostrar += "*";
+        for (let i = 0; i < Real.length; i++) {
+          if (i < Real.length - 4) {        
+            Mostrar += "#";
           } else {
-            Mostrar = Mostrar + Real[index];
+            Mostrar += Real[i];
           }
         }      
+        //console.log(Mostrar);
         return Mostrar;
     }
 };

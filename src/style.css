@@ -44,9 +44,10 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-#caracteristica{
-    color:#258EC9;
-    margin-left: 10%;
+.descrip h3{
+    color: #2F80ED;
+    margin-left: 15px;
+    font-family: 'Wendy One', sans-serif;
 }
 .descripcion{
     display: flex;
@@ -95,14 +96,14 @@ body {
 }
 .boton{
     margin-left: 25px;
-     width: 180px;
+    width: 180px;
     height: 50px;
     background-color: #0f4ba6;
     border-radius: 10px;
 	color: #fff;
 	cursor: pointer;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 15px;
+	border: 2px solid #C4C4C4;
   	letter-spacing: 1px;
 	outline: none;
 }
@@ -135,7 +136,7 @@ body {
     margin-left: 25%;
     border-radius: 8px;
     border: 1px solid #000;
-    box-shadow: 1px 2px #000;
+    box-shadow: 1px 2px #7f8fa6;
     outline: none;
     text-align: center;
 }
@@ -146,12 +147,12 @@ body {
 }
 
 .inputName {
-    margin-left: 36%;
+    margin-left: 35.7%;
     height: 35px;
     width: 350px;
     border-radius: 8px;
     border: 1px solid #000;
-    box-shadow: 1px 2px #000;
+    box-shadow: 1px 2px #7f8fa6;
     outline: none;
     text-align: center;
 }
@@ -174,10 +175,10 @@ body {
 }
 
 .btnValidar {
-    width: 180px;
+    width: 190px;
     height: 50px;
     margin-right: 100px;
-    background-color: #258EC9;
+    background-color: #0F4BA6;
     border: none;
     border-radius: 10px;
 	color: #fff;
@@ -200,9 +201,13 @@ body {
 
 .label {
     margin: 4px;
-    color: #fff;
-    font-size: 14px;
+    color: #b2bec3;
+    font-size: 13px;
     letter-spacing: 1px;
+}
+
+.datosTarjeta {
+    margin-top: 0px;
 }
 
 .numero {
@@ -216,18 +221,24 @@ body {
 }
 
 .validacion {
-    padding: 0% 20%;
+    padding: 0% 17.3%;
     margin: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.mensajeValidacion {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #2d3436;
+}
+
 .btnComprar {
-    width: 200px;
+    width: 190px;
     height: 50px;
     margin-right: 100px;
-    background-color: #258EC9;
+    background-color: #0F4BA6;
     border: none;
     border-radius: 10px;
 	color: #fff;

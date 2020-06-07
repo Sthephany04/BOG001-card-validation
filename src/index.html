@@ -15,7 +15,7 @@
     <main>
 
 <!-- html pantalla1 -->      
-      <section id=pantalla1 class="pantalla1">
+      <section id="pantalla1" class="pantalla1">
         <div class="producto">
           <h3 class="subtitulo">Producto</h3>
           <p>Mouse inalámbrico marca DELL</p>
@@ -38,7 +38,7 @@
         <div class="precio">
           <div class="estrella">
             <i id="estrella" class="fa fa-star"></i>
-            <p>Precio: $63.000</p>
+            <p>Precio: $60.000</p>
           </div>
           <p class="stock">Disponible en Stock</p>
         </div>
@@ -59,7 +59,7 @@
         <div class="inputNombre">
           <i class="far fa-user"></i>
           <label for="entradaNombre">Ingresa tu nombre</label>
-          <input type="text" class="inputName" id="entradaNombre" maxlength="19" oninput="ingresarNombre()" placeholder= "----------------">
+          <input type="text" class="inputName" id="entradaNombre" maxlength="19" placeholder= "----------------">
         </div>
 <!--Contenedor tarjeta-->
         <div  class="grupoValidar">
@@ -68,11 +68,11 @@
             <div class="datos">
               <div class="grupoNumero" id="numero">
                 <p class="label">NUMERO DE TARJETA</p>
-                <p id="contenedor" class="label">#### #### #### ####</p>
+                <p id="contenedor" class="datosTarjeta">#### #### #### ####</p>
               </div>
               <div class="grupoNombre" id="nombre">
                 <p class="label">NOMBRE</p>
-                <p id="name" class="label">Maria Gonzalez</p>
+                <p id="name" class="datosTarjeta">---------------</p>
               </div>
             </div>
           </div>
@@ -80,8 +80,8 @@
         </div>
 <!--Validacion de Tarjeta-->
         <div class="validacion">
-          <p id="mensaje"></p>
-          <button class="btnComprar hiden" id="mensajeBoton">COMPRAR</button>
+          <p class="mensajeValidacion" id="mensaje"></p>
+          <button class="btnComprar hiden" id="botonComprar">COMPRAR</button>
         </div>
       </section>
     </main>
@@ -92,5 +92,6 @@
     </footer>
     <script src="index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/826275d0c9.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   </body>
 </html>
