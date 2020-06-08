@@ -1,4 +1,5 @@
 import validator from './validator.js';
+import swal from 'sweetalert';
 
 //console.log(validator.isValid);
 
@@ -71,7 +72,7 @@ function pulsarBoton() {       //Boton pag 1
 }
 
 function comprar() {
-  //swal("Compra exitosa", "Pronto enviaremos tu producto", "success");  //alerta de comprar exitosa
+  swal("Compra exitosa", "Pronto enviaremos tu producto", "success");  //alerta de comprar exitosa
   pantalla1.style.display = "block";
   pantalla2.style.display = "none";
 }
