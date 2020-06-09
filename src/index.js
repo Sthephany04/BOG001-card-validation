@@ -1,5 +1,6 @@
 import validator from './validator.js';
-import swal from 'sweetalert';
+
+
 
 //console.log(validator.isValid);
 
@@ -9,8 +10,9 @@ let botonValidar = document.getElementById("btnValidar");
 let mensajeValidacion = document.getElementById("mensaje");
 let botonComprar = document.getElementById("botonComprar");
 let botonNext = document.getElementById("botonNext")
-let pantalla2 = document.getElementById("pantalla2");
 let pantalla1 = document.getElementById("pantalla1");
+let pantalla2 = document.getElementById("pantalla2");
+let pantalla3 = document.getElementById("pantalla3");
 let nombrePersona = document.getElementById("entradaNombre")
 let contenedorTarjetaNumero = document.getElementById("contenedor");
 let contenedorTarjetaNombre = document.getElementById("name")
@@ -38,11 +40,13 @@ function recibirNumero(evento) {
     "$1 "
   );
 
-  numeroTarjeta.value = inputNumero.replace(/\s/g, "")  // elimina los espacios
-   
+  numeroTarjeta.value = inputNumero
+  
+  .replace(/\s/g, "")  // elimina los espacios
+  .replace(/\D/g, ""); 
   //console.log(inputNumero);
 
-  if (inputNumero.length > 9) {
+  if (inputNumero.length > 15) {
     botonValidar.style.display = "block";    //Activa el boton de validar si los numeros ingresados son mas que 10
   }
 }
@@ -72,7 +76,6 @@ function pulsarBoton() {       //Boton pag 1
 }
 
 function comprar() {
-  swal("Compra exitosa", "Pronto enviaremos tu producto", "success");  //alerta de comprar exitosa
-  pantalla1.style.display = "block";
+  pantalla3.style.display = "block";
   pantalla2.style.display = "none";
 }
