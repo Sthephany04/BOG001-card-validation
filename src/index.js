@@ -1,5 +1,5 @@
 import validator from './validator.js';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 
 //console.log(validator.isValid);
 
