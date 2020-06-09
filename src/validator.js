@@ -6,6 +6,7 @@ const validator = {
 
         for (let i = 0; i < numero.length; i++) {  //ingresar el numero a un arreglo
             arreglo.push(parseInt(numero[i]));
+            //console.log(arreglo);
         }
         
         arreglo.reverse();     //metodo reverse, invertir el arreglo
@@ -13,12 +14,14 @@ const validator = {
 
         for (let i = 1; i < arreglo.length; i += 2) {   //ciclo para multiplicar cada dos posiciones * 2
             arreglo[i] = arreglo[i] * 2;
-
+                
                 if (arreglo[i] > 9) {        //condicional si el numero es mayor a dos cifras se suman sus digitos
+                    //console.log(arreglo[i], arreglo[i].toString()[0], arreglo[i].toString()[1], "total:", parseInt(arreglo[i].toString()[0]) + parseInt(arreglo[i].toString()[1]));
                     arreglo[i] =
                     parseInt(arreglo[i].toString()[0]) + parseInt(arreglo[i].toString()[1]);
+                   
                 }
-        }
+            }
 
         for (let i = 0; i < arreglo.length; i++) {  //ciclo para sumar todos los terminos del arreglo
             suma += arreglo[i];
@@ -49,3 +52,5 @@ const validator = {
 
 
 export default validator;
+
+
