@@ -170,6 +170,7 @@ body {
     height: 200px;
     padding: 10px 10px;
     color: #fff;
+    
 }
 
 .btnValidar {
@@ -246,16 +247,25 @@ body {
   	letter-spacing: 1px;
 	outline: none;
 }
-
+.gif {
+    width: 190px;
+}
 .msjExitoso {
     display: flex;
     margin: 150px 200px;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #2E4E7D;
+    border: 2px solid gray;
     padding: 50px;
     border-radius: 10px;
+    background-color: white;
+    font-family: 'Wendy One', sans-serif
 }
+.msjExitoso h2{
+color:#0F4BA6;
+
+}
+
 
 .footer {
     background: #2E4E7D;
@@ -277,4 +287,5 @@ body {
 
 .pantalla3 {
     display: none;
+   
 }

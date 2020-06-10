@@ -10,6 +10,7 @@ let botonValidar = document.getElementById("btnValidar");
 let mensajeValidacion = document.getElementById("mensaje");
 let botonComprar = document.getElementById("botonComprar");
 let botonNext = document.getElementById("botonNext")
+let botoncompraExitosa = document.getElementById("compraExitosa");
 let pantalla1 = document.getElementById("pantalla1");
 let pantalla2 = document.getElementById("pantalla2");
 let pantalla3 = document.getElementById("pantalla3");
@@ -22,7 +23,8 @@ let inputNumero;
 botonValidar.addEventListener('click', validar);
 botonNext.addEventListener('click', pulsarBoton);
 botonComprar.addEventListener('click', comprar);
-nombrePersona.addEventListener('keyup', ingresarNombre)
+botoncompraExitosa.addEventListener('click', regresar);
+nombrePersona.addEventListener('keyup', ingresarNombre);
 numeroTarjeta.addEventListener("keyup", recibirNumero);
 
 //Funcion que recibe el numero del input
@@ -78,4 +80,8 @@ function pulsarBoton() {       //Boton pag 1
 function comprar() {
   pantalla3.style.display = "block";
   pantalla2.style.display = "none";
+}
+function regresar(){
+  pantalla3.style.display="none";
+  pantalla1.style.display="block"
 }
