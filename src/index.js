@@ -1,7 +1,5 @@
 import validator from './validator.js';
 
-
-
 //console.log(validator.isValid);
 
 //Definicion de variables
@@ -32,14 +30,11 @@ numeroTarjeta.addEventListener("keyup", recibirNumero);
 function recibirNumero(evento) {
   let enmascarado = numeroTarjeta.value;
   nombre = nombrePersona.value; 
-  //mensajeValidacion.innerHTML = "";      //Reinicia en blanco el input de ingresar numero
-  //nombrePersona.innerHTML = "";          //Reinicia en blanco el input de ingresar nombre
-
   inputNumero = evento.target.value;
 
   enmascarado = validator.maskify(inputNumero);   //Se llama a la funcion de enmascarar numero
 
-  contenedorTarjetaNumero.innerHTML = enmascarado.replace(    //Reemplaza el espacio de la Tarjeta agrupando de a 4 numeros
+  contenedorTarjetaNumero.innerHTML = enmascarado.replace(  //Reemplaza el espacio de la Tarjeta agrupando de a 4 numeros
     /([#,0-9]{4})/g,
     "$1 "
   );
@@ -47,13 +42,10 @@ function recibirNumero(evento) {
   numeroTarjeta.value = inputNumero
   
   .replace(/\s/g, "")  // elimina los espacios
-  .replace(/\D/g, ""); 
-   
+  .replace(/\D/g, "");    
 }
 
-
-
-function validar() {          //Funcion que activa un mensaje y boton dependiendo el resultado de la  funcion isValid
+function validar() {      //Funcion que activa un mensaje y boton dependiendo el resultado de la  funcion isValid
   if (validator.isValid(inputNumero) == true) {
     mensajeValidacion.innerHTML = "Tu tarjeta es valida para comprar";
     botonComprar.style.display = "block";

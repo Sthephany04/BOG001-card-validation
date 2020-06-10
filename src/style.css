@@ -252,7 +252,7 @@ body {
 }
 .msjExitoso {
     display: flex;
-    margin: 150px 200px;
+    margin: 50px 500px;
     flex-direction: column;
     align-items: center;
     border: 2px solid gray;
@@ -266,13 +266,24 @@ body {
     color:#0F4BA6;
 }
 
+.msjExitoso p {
+    text-align: center;
+}
 
+.compraExitosa {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: gray;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
 .footer {
     background: #2E4E7D;
     height: 100px;
     color: #fff;
 }
-
 .footer p {
     margin: 0px 500px;
     text-align: center;
