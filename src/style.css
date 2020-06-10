@@ -261,9 +261,9 @@ body {
     background-color: white;
     font-family: 'Wendy One', sans-serif
 }
-.msjExitoso h2{
-color:#0F4BA6;
 
+.msjExitoso h2{
+    color:#0F4BA6;
 }
 
 
@@ -286,6 +286,5 @@ color:#0F4BA6;
 }
 
 .pantalla3 {
-    display: none;
-   
+    display: none;   
 }

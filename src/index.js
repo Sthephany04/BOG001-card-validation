@@ -10,28 +10,30 @@ let botonValidar = document.getElementById("btnValidar");
 let mensajeValidacion = document.getElementById("mensaje");
 let botonComprar = document.getElementById("botonComprar");
 let botonNext = document.getElementById("botonNext")
-let botoncompraExitosa = document.getElementById("compraExitosa");
+let botonCompraExitosa = document.getElementById("compraExitosa");
 let pantalla1 = document.getElementById("pantalla1");
 let pantalla2 = document.getElementById("pantalla2");
 let pantalla3 = document.getElementById("pantalla3");
 let nombrePersona = document.getElementById("entradaNombre")
 let contenedorTarjetaNumero = document.getElementById("contenedor");
 let contenedorTarjetaNombre = document.getElementById("name")
+let nombre;
 let inputNumero;
 
 //Declaracion de eventos
 botonValidar.addEventListener('click', validar);
 botonNext.addEventListener('click', pulsarBoton);
 botonComprar.addEventListener('click', comprar);
-botoncompraExitosa.addEventListener('click', regresar);
+botonCompraExitosa.addEventListener('click', regresar);
 nombrePersona.addEventListener('keyup', ingresarNombre);
 numeroTarjeta.addEventListener("keyup", recibirNumero);
 
 //Funcion que recibe el numero del input
 function recibirNumero(evento) {
-  let enmascarado = numeroTarjeta.value;  
-  mensajeValidacion.innerHTML = "";      //Reinicia en blanco el input de ingresar numero
-  nombrePersona.innerHTML = "";          //Reinicia en blanco el input de ingresar nombre
+  let enmascarado = numeroTarjeta.value;
+  nombre = nombrePersona.value; 
+  //mensajeValidacion.innerHTML = "";      //Reinicia en blanco el input de ingresar numero
+  //nombrePersona.innerHTML = "";          //Reinicia en blanco el input de ingresar nombre
 
   inputNumero = evento.target.value;
 
@@ -46,12 +48,10 @@ function recibirNumero(evento) {
   
   .replace(/\s/g, "")  // elimina los espacios
   .replace(/\D/g, ""); 
-  //console.log(inputNumero);
-
-  if (inputNumero.length > 15) {
-    botonValidar.style.display = "block";    //Activa el boton de validar si los numeros ingresados son mas que 10
-  }
+   
 }
+
+
 
 function validar() {          //Funcion que activa un mensaje y boton dependiendo el resultado de la  funcion isValid
   if (validator.isValid(inputNumero) == true) {
@@ -60,12 +60,17 @@ function validar() {          //Funcion que activa un mensaje y boton dependiend
   } else {
     mensajeValidacion.innerHTML = "Tu tarjeta NO es valida";
     numeroTarjeta.value = "";
+    nombrePersona.value = "";
     botonValidar.style.display = "none";
   }
 }
 
 function ingresarNombre() {    //Reemplaza en la tarjeta el nombre ingresado en el input y pasa el nombre a mayusculas
-  let nombre = nombrePersona.value;
+  nombre = nombrePersona.value;
+
+  if (nombre.length > 2 && inputNumero.length > 15) {
+    botonValidar.style.display = "block";
+  }
   contenedorTarjetaNombre.innerHTML = nombre.toUpperCase();
 }
 
@@ -81,7 +86,12 @@ function comprar() {
   pantalla3.style.display = "block";
   pantalla2.style.display = "none";
 }
-function regresar(){
-  pantalla3.style.display="none";
-  pantalla1.style.display="block"
+
+function regresar() {
+  pantalla1.style.display = "block";
+  pantalla3.style.display = "none";
+  numeroTarjeta.value = "";
+  nombrePersona.value = "";
+  contenedorTarjetaNombre.innerHTML = "-------------------";
+  contenedorTarjetaNumero.innerHTML = "#### #### #### ####";
 }
