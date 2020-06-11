@@ -24,14 +24,12 @@ botonNext.addEventListener('click', pulsarBoton);
 botonComprar.addEventListener('click', comprar);
 botonCompraExitosa.addEventListener('click', regresar);
 nombrePersona.addEventListener('keyup', ingresarNombre);
-numeroTarjeta.addEventListener("keyup", recibirNumero);
+numeroTarjeta.addEventListener("keyup", recibirNumero); 
 
 //Funcion que recibe el numero del input
 function recibirNumero(evento) {
   let enmascarado = numeroTarjeta.value;
-  nombre = nombrePersona.value; 
   inputNumero = evento.target.value;
-
   enmascarado = validator.maskify(inputNumero);   //Se llama a la funcion de enmascarar numero
 
   contenedorTarjetaNumero.innerHTML = enmascarado.replace(  //Reemplaza el espacio de la Tarjeta agrupando de a 4 numeros
@@ -42,7 +40,7 @@ function recibirNumero(evento) {
   numeroTarjeta.value = inputNumero
   
   .replace(/\s/g, "")  // elimina los espacios
-  .replace(/\D/g, "");    
+  .replace(/\D/g, ""); //elimina las letras   
 }
 
 function validar() {      //Funcion que activa un mensaje y boton dependiendo el resultado de la  funcion isValid
