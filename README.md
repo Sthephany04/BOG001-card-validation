@@ -1,4 +1,4 @@
-## Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual :tw-1f4b3: :tw-1f600: :tw-1f4bb:
+# Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual 
 
 ##### Resumen
 
@@ -30,7 +30,7 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 
 ![](Prototipo/Prototipo_figma_pag2.png)
 
-#### Visualizacion del proyecto en Github Pages
+## Visualizacion del proyecto en Github Pages
 
  [Accede aqui](https://sthephany04.github.io/BOG001-card-validation/)
 
