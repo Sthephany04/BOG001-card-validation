@@ -30,7 +30,7 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 
 ![](Prototipo/Prototipo_figma_pag2.png)
 
-### Objetivos de aprendizaje obtenidos
+## Objetivos de aprendizaje obtenidos
 
 #### UX
 
@@ -38,19 +38,19 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 - Crear prototipos para obtener feedback e iterar
 - Aplicar los principios de diseño visual
 
-### HTML y CSS
+#### HTML y CSS
 
 - Uso correcto de HTML semántico
 - Uso de selectores de CSS
 - Construir tu aplicación respetando el diseño realizado (maquetación).
 
-### DOM
+#### DOM
 
 * [ ] Uso de selectores de nodos del DOM (Falta profundizar mas)
 - Manejo de eventos del DOM
 * [ ] Manipulación dinámica del DOM (Falta profundizar mas)
 
-### Javascript
+#### Javascript
 
 - Manipulación de strings
 - Uso de condicionales
@@ -59,16 +59,16 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 * [ ] Datos atómicos y estructurados
 - Utilizar ES Modules (`import` | `export`).
 
-### Testing
+#### Testing
 
 - Testeo de tus funciones
 
-### Git y GitHub
+#### Git y GitHub
 
 - Comandos de git (`add` | `commit` | `pull` | `status` | `push`).
 - Manejo de repositorios de GitHub (`clone` | `fork` | `gh-pages`).
 
-### Buenas prácticas de desarrollo
+#### Buenas prácticas de desarrollo
 
 - Organizar y dividir el código en módulos (Modularización).
 - Uso de identificadores descriptivos (Nomenclatura | Semántica).
