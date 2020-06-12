@@ -6,7 +6,7 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 
 * La imagen final de tu proyecto.
 
-<img src = ".Prototipo/Sketch pag1.jpeg">
+![](Prototipo/Sketch pag1.jpeg)
 
 * Investigación UX:
 
