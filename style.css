@@ -1,0 +1,301 @@
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.hiden {
+    display: none;
+}
+
+.banner{
+    height: 100px;
+    background-color: #258EC9;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    padding-left: 10%;
+}
+
+.tituloPrincipal{
+    margin-top: 35px;
+    color:white;
+    font-family: 'Wendy One', sans-serif;
+    padding-left: 5%;
+    widows: 300px; ;
+}
+
+.mouse{
+    height: 253px;
+}
+
+.producto{
+    padding: 0% 20%;
+}
+.producto h3{
+    font-family: 'Wendy One', sans-serif;
+}
+
+.subtitulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.descrip h3{
+    color: #2F80ED;
+    margin-left: 15px;
+    font-family: 'Wendy One', sans-serif;
+}
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 20%;
+}
+.descrip{
+    background-color: #C4C4C4;
+    width: 400px;
+    
+}
+.descrip h3{
+    padding-left: 5%;
+}
+.centro{
+    text-align: center;
+    margin: 3px;
+    
+}
+.stock{
+    font-weight: bold;
+    padding-left: 45px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+.precio{
+    padding: 0% 20%;
+}
+
+.btnPago{
+    padding:0% 20%;
+    display: flex;
+    flex-direction: row;
+    color:black; 
+    align-items: center;
+    justify-content: flex-end;
+}
+.pagar{
+    /* padding-left: 30%; */
+    margin-left: 10PX;
+}
+.tarjetadecredito{
+    height: 50px;
+    border-radius:10px ;
+}
+.boton{
+    margin-left: 25px;
+    width: 180px;
+    height: 50px;
+    background-color: #0f4ba6;
+    border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
+	border: 2px solid #C4C4C4;
+  	letter-spacing: 1px;
+	outline: none;
+}
+.estrella{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+#estrella{
+     color: rgb(247, 232, 25);
+    border-width: 2px;
+    padding-right: 10px;
+    font-size:30px ;
+}
+
+.titulo {
+    padding: 0% 20%;
+    margin: 20px 0px;
+    font-family: 'Wendy One', sans-serif;
+}
+
+.inputNumero {
+    padding: 0% 20%;
+    margin: 30px 0px;    
+}
+
+.inputNumber {
+    height: 35px;
+    width: 350px;
+    margin-left: 25%;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 1px 2px #7f8fa6;
+    outline: none;
+    text-align: center;
+}
+
+.inputNombre {
+    padding: 0% 20%;
+    margin: 25px 0px;
+}
+
+.inputName {
+    margin-left: 35.7%;
+    height: 35px;
+    width: 350px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 1px 2px #7f8fa6;
+    outline: none;
+    text-align: center;
+}
+
+.grupoValidar {
+    padding: 0% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta {
+    background: url(./imagenes/textura\ tarjeta.jpg);
+    background-size: cover;   
+    border-radius: 10px; 
+    width: 350px;
+    height: 200px;
+    padding: 10px 10px;
+    color: #fff;
+    
+}
+
+.btnValidar {
+    width: 190px;
+    height: 50px;
+    margin-right: 100px;
+    background-color: #0F4BA6;
+    border: none;
+    border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+  	letter-spacing: 2px;
+	outline: none;
+}
+
+.tarjeta .title {
+    margin: 0px;
+    font-size: 12px;
+    color: red;
+}
+
+.datos {
+    margin-top: 70px;
+}
+
+.label {
+    margin: 4px;
+    color: #b2bec3;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.datosTarjeta {
+    margin-top: 0px;
+}
+
+.numero {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.nombre {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.validacion {
+    padding: 0% 17.3%;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensajeValidacion {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #2d3436;
+}
+
+.btnComprar {
+    width: 190px;
+    height: 50px;
+    margin-right: 100px;
+    background-color: #0F4BA6;
+    border: none;
+    border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+  	letter-spacing: 1px;
+	outline: none;
+}
+.gif {
+    width: 190px;
+}
+.msjExitoso {
+    display: flex;
+    margin: 50px 500px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Wendy One', sans-serif
+}
+
+.msjExitoso h2{
+    color:#0F4BA6;
+}
+
+.msjExitoso p {
+    text-align: center;
+}
+
+.compraExitosa {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: gray;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.footer {
+    background: #2E4E7D;
+    height: 100px;
+    color: #fff;
+}
+.footer p {
+    margin: 0px 500px;
+    text-align: center;
+    padding: 26px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.pantalla2 {
+    display: none;
+}
+
+.pantalla3 {
+    display: none;   
+}

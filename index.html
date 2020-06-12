@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="utf-8">
+    <title>Tu Tienda Virtual</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato&family=Wendy+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="banner">
+      <img class="logo" src="./imagenes/Logo.svg">
+      <h1 class="tituloPrincipal">Tu Tienda Virtual</h1>      
+    </header>
+    <main>
+
+<!-- html pantalla1 -->      
+      <section id="pantalla1" class="pantalla1">
+        <div class="producto">
+          <h3 class="subtitulo">Producto</h3>
+          <p>Mouse inalámbrico marca DELL</p>
+        </div>
+        <div class="descripcion">
+          <img  class="mouse" src="./imagenes/mouse.jpeg">
+        
+        <div class="descrip">
+          <h3 id="caracteristica">Descripción</h3>
+          <p class="centro">Configuración rápida y fácil instalación</p>
+          <p class="centro">Contenido de la caja</p>
+          <p class="centro"> Mouse óptico inalámbrico WM126 </p>
+          <p class="centro">Dell</p>
+            <p class="centro">1 batería AA</p>
+            <p class="centro">Receptor USB</p> 
+            <p class="centro">Documentación</p>
+            
+        </div>
+        </div>
+        <div class="precio">
+          <div class="estrella">
+            <i id="estrella" class="fa fa-star"></i>
+            <p>Precio: $60.000</p>
+          </div>
+          <p class="stock">Disponible en Stock</p>
+        </div>
+        <div class="btnPago">
+          <img class="tarjetadecredito" src="./imagenes/tarjetas de credito.jpg">
+          <p class="pagar">Pago hasta 12 cuotas</p>
+          <button class="boton" id="botonNext">Pago con tarjeta de crédito</button>
+        </div>
+      </section>
+<!-- html pantalla2 --> 
+      <section id="pantalla2" class="pantalla2">
+        <h3 class="titulo">Datos de Pagos</h3>
+        <div class="inputNumero">
+          <i class="far fa-credit-card"></i>
+          <label for="entradaNumero">Ingresa el número de la tarjeta</label>
+          <input type="text" class="inputNumber" id="entradaNumero" maxlength="16" placeholder="NUMERO">
+        </div>
+        <div class="inputNombre">
+          <i class="far fa-user"></i>
+          <label for="entradaNombre">Ingresa tu nombre</label>
+          <input type="text" class="inputName" id="entradaNombre" maxlength="19" placeholder= "NOMBRE">
+        </div>
+<!--Contenedor tarjeta-->
+        <div  class="grupoValidar">
+          <div class="tarjeta" id="tarjeta">
+            <p class="title">Tarjeta de credito</p>
+            <div class="datos">
+              <div class="grupoNumero" id="numero">
+                <p class="label">NUMERO DE TARJETA</p>
+                <p id="contenedor" class="datosTarjeta">#### #### #### ####</p>
+              </div>
+              <div class="grupoNombre" id="nombre">
+                <p class="label">NOMBRE</p>
+                <p id="name" class="datosTarjeta">---------------</p>
+              </div>
+            </div>
+          </div>
+          <button class="btnValidar hiden" id="btnValidar">VALIDAR</button>
+        </div>
+<!--Validacion de Tarjeta-->
+        <div class="validacion">
+          <p class="mensajeValidacion" id="mensaje"></p>
+          <button class="btnComprar hiden" id="botonComprar">COMPRAR</button>
+        </div>
+      </section>
+ <!--pantalla 3-->
+      <section class="pantalla3" id="pantalla3">
+        <div class="msjExitoso">
+          <img class="gif" src="./imagenes/checklist.gif">
+          <h2 class="msjCompra">Compra Exitosa</h2>
+          <p class="msjEnvio">Pronto le enviaremos su producto</p>
+          <button class="compraExitosa" id="compraExitosa">OK</button>
+        </div>
+      </section>
+    </main>
+<!--footer-->
+    <footer class="footer">
+      <p>COPYRIGHT 2020 
+        TODOS LOS DERECHOS RESERVADOS A VIRTUAL TECH DISTRIBUCIONES S.A.S</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/826275d0c9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
