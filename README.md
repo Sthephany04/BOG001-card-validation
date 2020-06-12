@@ -34,43 +34,43 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 
 #### UX
 
-- Diseñar la aplicación pensando y entendiendo al usuario
-- Crear prototipos para obtener feedback e iterar
-- Aplicar los principios de diseño visual
+* [x] Diseñar la aplicación pensando y entendiendo al usuario
+* [x] Crear prototipos para obtener feedback e iterar
+* [x] Aplicar los principios de diseño visual
 
 #### HTML y CSS
 
-- Uso correcto de HTML semántico
-- Uso de selectores de CSS
-- Construir tu aplicación respetando el diseño realizado (maquetación).
+* [x] Uso correcto de HTML semántico
+* [x] Uso de selectores de CSS
+* [x] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 #### DOM
 
-* [ ] Uso de selectores de nodos del DOM (Falta profundizar mas)
-- Manejo de eventos del DOM
-* [ ] Manipulación dinámica del DOM (Falta profundizar mas)
+* [ ] Uso de selectores de nodos del DOM 
+* [x] Manejo de eventos del DOM
+* [x] Manipulación dinámica del DOM 
 
 #### Javascript
 
-- Manipulación de strings
-- Uso de condicionales
-- Uso de bucles
-- Uso de funciones
+* [x] Manipulación de strings
+* [x] Uso de condicionales
+* [x] Uso de bucles
+* [x] Uso de funciones
 * [ ] Datos atómicos y estructurados
-- Utilizar ES Modules (`import` | `export`).
+* [x] Utilizar ES Modules (`import` | `export`).
 
 #### Testing
 
-- Testeo de tus funciones
+* [x] Testeo de tus funciones
 
 #### Git y GitHub
 
-- Comandos de git (`add` | `commit` | `pull` | `status` | `push`).
-- Manejo de repositorios de GitHub (`clone` | `fork` | `gh-pages`).
+* [x] Comandos de git (`add` | `commit` | `pull` | `status` | `push`).
+* [x] Manejo de repositorios de GitHub (`clone` | `fork` | `gh-pages`).
 
 #### Buenas prácticas de desarrollo
 
-- Organizar y dividir el código en módulos (Modularización).
-- Uso de identificadores descriptivos (Nomenclatura | Semántica).
-- Uso de linter para seguir buenas prácticas (ESLINT).
+* [x] Organizar y dividir el código en módulos (Modularización).
+* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+* [x] Uso de linter para seguir buenas prácticas (ESLINT).
 
