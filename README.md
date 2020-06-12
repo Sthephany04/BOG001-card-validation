@@ -1,6 +1,6 @@
-### Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual
+## Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual :tw-1f4b3: :tw-1f600: :tw-1f4bb:
 
-###### Resumen
+##### Resumen
 
 En este proyecto se simulo una tienda virtual, donde el usuario realiza la compra de un producto por medio de tarjeta de credito, como punto importante se realizó la validacion para saber si la tarjeta es valida o no utilizando el algoritmo de luhn, ademas se enmascaro el numero de la tarjeta dejando visible solo los ultimos cuatro digitos.
 
@@ -29,6 +29,10 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 ![](Prototipo/Prototipo_figma_pag1.png)
 
 ![](Prototipo/Prototipo_figma_pag2.png)
+
+#### Visualizacion del proyecto en Github Pages
+
+ [Accede aqui](https://sthephany04.github.io/BOG001-card-validation/)
 
 ## Objetivos de aprendizaje obtenidos
 
