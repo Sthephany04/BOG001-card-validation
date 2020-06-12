@@ -4,9 +4,14 @@
 
 En este proyecto se simulo una tienda virtual, donde el usuario realiza la compra de un producto por medio de tarjeta de credito, como punto importante se realizó la validacion para saber si la tarjeta es valida o no utilizando el algoritmo de luhn, ademas se enmascaro el numero de la tarjeta dejando visible solo los ultimos cuatro digitos.
 
-* La imagen final de tu proyecto.
+* Visualizacion del proyecto:
 
-![](Prototipo/Sketch-pag1.jpeg)
+![](Prototipo/pag1_opt.png)
+
+![](Prototipo/pag2_opt.png)
+
+![](Prototipo/pag3_opt.png)
+
 
 * Investigación UX:
 
