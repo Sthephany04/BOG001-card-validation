@@ -1,4 +1,4 @@
-# Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual 
+# Proyecto Validación Tarjeta de Credito - Tu Tienda Virtual 💳
 
 ##### Resumen
 
@@ -13,7 +13,7 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 ![](Prototipo/pag3_opt.png)
 
 
-* Investigación UX:
+* Investigación UX 👩👨
 
   1. Nuestros usuarios son compradores que cuenten con una tarjeta de credito para realizar el pago de los productos.
   2. Nuestro proyecto satisface la necesidad de los usuarios que quieran adquirir un producto por medio de una tienda virtual, nos aseguramos de que fuera fácil la navegación por la página y que fuera entendible.
@@ -30,11 +30,11 @@ En este proyecto se simulo una tienda virtual, donde el usuario realiza la compr
 
 ![](Prototipo/Prototipo_figma_pag2.png)
 
-## Visualizacion del proyecto en Github Pages
+## Visualizacion del proyecto en Github Pages 💻
 
  [Accede aqui](https://sthephany04.github.io/BOG001-card-validation/)
 
-## Objetivos de aprendizaje obtenidos
+## Objetivos de aprendizaje obtenidos 📕
 
 #### UX
 
